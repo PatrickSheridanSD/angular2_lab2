@@ -1,16 +1,21 @@
-    <div class="container">
-        
-        <form>
-          <div class="form-group">
-            <label for="name">Miles</label>
-            <input type="text" class="form-control" id="miles" name="miles">
-          </div>
-          <p id='mi-to-ki'>{{clickMessage}}</p>
-          <div class="form-group">
-            <label for="alterEgo">Kilometers</label>
-            <input type="text" class="form-control" id="Kilometers" name="kilometers">
-          </div>
-          <p id='ki-to-mi'>{{clickMessage1}}</p>
-          <button type="submit" class="btn btn-default" (click)="onClickMe()">Submit</button>
-        </form>
-    </div>
+   <p>
+  <input #myMessage myMessage.value='' />
+
+  <button (click)='onClickMe(myMessage.value)'>Click Me!</button>
+
+</p>
+
+
+<h3 class="message">{{clickMessage}}</h3>
+
+<h4>Enter Kilometer value to get miles!</h4>
+
+ <p>
+  <input #myMessage1 myMessage1.value='' />
+
+  <button (click)='onClickMe1(myMessage1.value)'>Click Me!</button>
+
+</p>
+
+
+<h3 class="message">{{clickMessage1}}</h3>
